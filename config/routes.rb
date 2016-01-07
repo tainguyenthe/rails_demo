@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'homes/show'
+  
+  get 'homes/index'
+
+  
+
   #root 'blog#index'
   #resources :articles
   
