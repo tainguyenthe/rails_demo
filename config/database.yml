@@ -53,7 +53,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: block_test
+  database: block_development
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -76,6 +76,6 @@ test:
 #
 production:
   <<: *default
-  database: block_production
+  database: block_development
   username: demo_cms
   password: <%= ENV['DEMO_CMS_DATABASE_PASSWORD'] %>

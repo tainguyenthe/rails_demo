@@ -5,6 +5,7 @@ gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 gem 'mysql2', '>= 0.3.13', '< 0.5'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Bootstrap-sass
@@ -59,4 +60,9 @@ end
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
+end
+
+#dev define
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
 end
