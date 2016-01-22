@@ -8,6 +8,9 @@ Associations between models
 rails generate migration create_users {...fill to file...}
 rake db:migrate {...run file migrate...}
 
+--list link on router file
+rake routes
+
 =================
 testing specs for recipes:
 name: string
